@@ -2,9 +2,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, create .env.local file in the root directory 
+and put the contract address value as it is in the .env.example
+ADDRESS=0x03040003000
+
 
 ```bash
+npm i
+
 npm run dev
 # or
 yarn dev

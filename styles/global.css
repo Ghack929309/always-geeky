@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply h-screen grid place-items-center text-lg bg-[hsl(217,54%,11%)];
+}
+
+.container {
+    @apply w-[300px] h-auto bg-[hsl(216,50%,16%)] p-5 rounded-[15px] flex flex-col items-center justify-center;
+}
+
+.container-image {
+    @apply w-[300px] h-[300px] relative mb-[15px];
+}
+
+.ethereum {
+    @apply w-full h-full rounded-[10px];
+}
+
+.overlay {
+    @apply absolute h-full w-full opacity-0 transition-[0.5s] duration-[ease] bg-[hsl(178,100%,50%)] flex justify-center items-center rounded-[10px] inset-0;
+}
+
+.container-image:hover .overlay {
+    @apply opacity-40 cursor-pointer;
+}
+
+.image-overlay {
+    @apply absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
+}
+
+h1 {
+    @apply text-xl font-semibold text-white mb-2.5 hover:text-[hsl(178,100%,50%)] hover:cursor-pointer;
+}
+
+p {
+    @apply text-[hsl(215,32%,27%)] font-normal;
+}
+
+.container-price {
+    @apply flex justify-between mx-0 my-3 w-full;
+}
+
+.price img,
+.time img {
+    @apply w-[13px] h-[15px] mr-2.5;
+}
+
+.price,
+.time {
+    @apply flex items-center;
+}
+
+.price p,
+.time p {
+    @apply text-base mx-0 my-[5px];
+}
+
+.price p {
+    @apply text-[hsl(178,100%,50%)];
+}
+
+hr {
+    @apply h-px bg-[hsl(215,32%,27%)] border-[none];
+}
+
+.container-creator {
+    @apply flex items-center;
+}
+
+.container-creator p {
+    @apply text-base;
+}
+
+.avatar {
+    @apply w-[35px] h-[35px] border ml-0 mr-[15px] mt-[15px] mb-0 rounded-[50%] border-solid border-white;
+}
+
+strong {
+    @apply text-white font-light hover:text-[hsl(178,100%,50%)] hover:cursor-pointer;
+}
+
+.custom-number-input input:focus {
+    outline: none !important;
+}
+.custom-number-input button:focus {
+    outline: none !important;
+}
+.input-number{
+    @apply outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-sm hover:text-black focus:text-black flex items-center text-gray-700  outline-none
+}
+.increment{
+    @apply bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer
+}
+.decrement{
+    @apply bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer outline-none
+}
+.icon{
+    @apply w-5 h-5
+}

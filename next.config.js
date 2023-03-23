@@ -3,6 +3,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  reactDevOverlay: false
 }
 
 module.exports = nextConfig
